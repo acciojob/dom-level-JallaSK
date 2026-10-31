@@ -1,1 +1,12 @@
-//your JS code here. If required.
+let element = document.getElementById("level");
+
+let level = 0;
+
+let parent = element.parentElement;
+
+while (parent) {
+    level++;
+    parent = parent.parentElement;
+}
+
+alert("The level of the element is: " + level);
